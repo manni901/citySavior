@@ -20,7 +20,11 @@ export class LoginPage {
   doFbLogin(){
    
     let permissions = new Array<string>();
+<<<<<<< HEAD
+    //let nav = this.navCtrl;
+=======
     let nav = this.navCtrl;
+>>>>>>> upstream/master
     //the permissions your facebook app needs from the user
     permissions = ["public_profile","email"];
 
@@ -34,6 +38,14 @@ export class LoginPage {
       .then((user) => {
         user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
         //now we have the users info, let's save it in the NativeStorage
+<<<<<<< HEAD
+		
+		this.checkMember(user);
+        
+      });
+    }).catch((error) => {
+      console.log(error);
+=======
 		console.log("User is"+user.email);
 		//this.checkMember(user);
         console.log("Working here");
@@ -53,6 +65,7 @@ export class LoginPage {
       });
     }).catch((error) => {
       console.log("check1"+error);
+>>>>>>> upstream/master
     });
   }
   
@@ -102,7 +115,11 @@ export class LoginPage {
         });
 	   }
 	   }, err => {
+<<<<<<< HEAD
+	    console.log('Error occured');
+=======
 	    console.log('Sign up Error occured');
+>>>>>>> upstream/master
 		console.log(JSON.stringify(err.json()));
 	   });
 	});

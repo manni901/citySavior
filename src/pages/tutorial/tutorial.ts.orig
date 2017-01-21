@@ -65,7 +65,11 @@ export class TutorialPage {
 	  Diagnostic.requestLocationAuthorization().then((result) => {
 	   switch(result){
 	   
+<<<<<<< HEAD
+	   case Diagnostic.permissionStatus.GRANTED: console.log("Permission granted");
+=======
 	   case "authorized_when_in_use": console.log("Permission granted previously IOS");
+>>>>>>> upstream/master
 	     LocationAccuracy.request(LocationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(
 		  () => {
 		   console.log('Request Location authorization successful');
@@ -77,6 +81,8 @@ export class TutorialPage {
 			this.exit();
 		   });
 		   break;
+<<<<<<< HEAD
+=======
 
        case "denied": console.log("Prompting user to grant location permission IOS");
        alert("Please allow location access to City Savior app in your settings to proceed.")
@@ -117,6 +123,7 @@ export class TutorialPage {
       this.exit();
        });
        break;
+>>>>>>> upstream/master
 		  
         case Diagnostic.permissionStatus.DENIED:  console.log("Permission denied");
             this.storage.set('hasSeenTutorial', 'true');

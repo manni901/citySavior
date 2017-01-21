@@ -1,5 +1,8 @@
 # City Savior
 
+<<<<<<< HEAD
+Civic app for SwampHacks 2017!
+=======
 Revamp of our project in Ionic. It is still in development.
 
 
@@ -10,3 +13,4 @@ Revamp of our project in Ionic. It is still in development.
 * Run `npm install` from the project root.
 * Install the ionic CLI (`npm install -g ionic`)
 * Run `ionic serve` in a terminal from the project root.
+>>>>>>> upstream/master

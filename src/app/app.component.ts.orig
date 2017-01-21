@@ -134,6 +134,8 @@ export class CitysavApp {
 	else{
 	  Diagnostic.requestLocationAuthorization().then((result) => {
 	   switch(result){
+<<<<<<< HEAD
+=======
 
        case "not_determined": console.log("Asking user for permission IOS");
        LocationAccuracy.request(LocationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(
@@ -168,6 +170,7 @@ export class CitysavApp {
       this.exit();
        });
        break;
+>>>>>>> upstream/master
 	   
 	   case Diagnostic.permissionStatus.GRANTED: console.log("Permission granted");
 	     LocationAccuracy.request(LocationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY).then(
